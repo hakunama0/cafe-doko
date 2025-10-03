@@ -74,7 +74,7 @@ struct SettingsView: View {
                             } label: {
                                 HStack {
                                     Text("キャッシュをクリア")
-                                        .foregroundStyle(.white)
+                                        .foregroundStyle(.primary)
                                     Spacer()
                                 }
                                 .contentShape(Rectangle())
@@ -115,10 +115,10 @@ struct SettingsView: View {
                         VStack(spacing: 0) {
                             HStack {
                                 Text("バージョン")
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(.primary)
                                 Spacer()
                                 Text(appVersion)
-                                    .foregroundStyle(.white.opacity(0.6))
+                                    .foregroundStyle(.secondary)
                             }
                             .padding()
                             
@@ -128,7 +128,7 @@ struct SettingsView: View {
                             Link(destination: URL(string: "https://example.com")!) {
                                 HStack {
                                     Text("プライバシーポリシー")
-                                        .foregroundStyle(.white)
+                                        .foregroundStyle(.primary)
                                     Spacer()
                                     Image(systemName: "arrow.up.right.square")
                                         .foregroundStyle(.blue)
@@ -142,7 +142,7 @@ struct SettingsView: View {
                             Link(destination: URL(string: "https://example.com")!) {
                                 HStack {
                                     Text("利用規約")
-                                        .foregroundStyle(.white)
+                                        .foregroundStyle(.primary)
                                     Spacer()
                                     Image(systemName: "arrow.up.right.square")
                                         .foregroundStyle(.blue)
