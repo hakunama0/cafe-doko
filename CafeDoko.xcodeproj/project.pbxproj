@@ -146,7 +146,7 @@
 		636E8FDE853E91F90EF5314A /* GooglePlacesCafeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesCafeProvider.swift; sourceTree = "<group>"; };
 		6E8698A29345E25A90CD5371 /* CafeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDetailView.swift; sourceTree = "<group>"; };
 		7371CE17355785E82922E862 /* ChainMenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainMenuService.swift; sourceTree = "<group>"; };
-		844F6E8E2E8FC37600FBE8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		844F6E902E8FC4AE00FBE8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		865AA39BD846ACA0FCC4E28C /* CafeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMapView.swift; sourceTree = "<group>"; };
 		89DBC3EA12D15BBBB188C30E /* DokoCafeFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokoCafeFeature.swift; sourceTree = "<group>"; };
 		8E1294A13BC8D8097EACBF48 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -299,7 +299,7 @@
 		7AE988A262CE481A264F69BF = {
 			isa = PBXGroup;
 			children = (
-				844F6E8E2E8FC37600FBE8EA /* Assets.xcassets */,
+				844F6E902E8FC4AE00FBE8EA /* Assets.xcassets */,
 				4A1CB74046758088E1382CD2 /* App */,
 				C4FA23A81289B1578E5D8ACA /* Features */,
 				14B5B0118726075EAF3A327F /* Tests */,
