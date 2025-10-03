@@ -102,7 +102,7 @@ struct SettingsView: View {
                             Divider()
                                 .background(.white.opacity(0.1))
                             
-                            Link(destination: URL(string: "https://example.com")!) {
+                            Link(destination: URL(string: "https://github.com/hakunama0/cafe-doko/blob/main/PRIVACY.md")!) {
                                 HStack {
                                     Text("プライバシーポリシー")
                                         .foregroundStyle(.primary)
@@ -116,7 +116,7 @@ struct SettingsView: View {
                             Divider()
                                 .background(.white.opacity(0.1))
                             
-                            Link(destination: URL(string: "https://example.com")!) {
+                            Link(destination: URL(string: "https://github.com/hakunama0/cafe-doko/blob/main/TERMS.md")!) {
                                 HStack {
                                     Text("利用規約")
                                         .foregroundStyle(.primary)
