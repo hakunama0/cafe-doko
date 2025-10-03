@@ -168,7 +168,7 @@ public struct RemoteCafeDataProvider: CafeDataProviding {
                 }
             }
 
-            var single = try decoder.singleValueContainer()
+            let single = try decoder.singleValueContainer()
             self.chains = try single.decode([ChainDTO].self)
             self.pagination = nil
         }

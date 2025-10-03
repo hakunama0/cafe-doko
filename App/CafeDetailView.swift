@@ -211,7 +211,7 @@ struct CafeDetailView: View {
     
     private func openInMaps() {
         // 住所が利用可能な場合は住所で検索、将来的に座標データが追加されればそちらを優先
-        if let address = chain.address {
+        if chain.address != nil {
             openAddressInMaps()
         } else {
             // 座標がない場合はカフェ名で検索

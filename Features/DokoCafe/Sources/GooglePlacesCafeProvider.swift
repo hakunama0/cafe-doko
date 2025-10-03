@@ -1,6 +1,6 @@
 import Foundation
-import CoreLocation
-import CafeDokoCore
+@preconcurrency import CoreLocation
+@preconcurrency import CafeDokoCore
 
 /// Google Places APIを使用してカフェデータを取得するプロバイダー
 public struct GooglePlacesCafeProvider: CafeDataProviding {
