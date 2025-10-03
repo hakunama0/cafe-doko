@@ -641,7 +641,7 @@ private struct iOS26ButtonStyle: ButtonStyle {
 
 #Preview {
     CafeDetailView(
-        chain: Cafe(
+        chain: DokoCafeViewModel.Chain(
             id: "preview-1",
             name: "スターバックス 渋谷店",
             placeId: "preview-place-1",
@@ -657,10 +657,9 @@ private struct iOS26ButtonStyle: ButtonStyle {
             userRatingsTotal: 1234,
             photos: []
         ),
-        isFavorite: false,
-        onToggleFavorite: {}
+        descriptor: CafeImageDescriptor(systemName: "cup.and.saucer.fill", color: .green),
+        favoritesManager: FavoritesManager()
     )
-    .environmentObject(ChainMenuManager())
-    .environmentObject(HistoryManager())
+    .environment(ChainMenuManager())
 }
 
