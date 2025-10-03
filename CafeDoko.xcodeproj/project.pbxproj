@@ -30,7 +30,6 @@
 		AC8F9015E19598A7C3198717 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D03DD6E62C8CB2C76CD1C /* FavoritesManager.swift */; };
 		B176A85CF914180DDF7F80D5 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB596F4BB8B569F3480D7201 /* HistoryManager.swift */; };
 		B695C25513C75754A518AB16 /* DokoCafeFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37F473876F8E603A881E7FE5 /* DokoCafeFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C5E8F0AEBCF47A43283CBD91 /* GooglePlacesCafeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3F7DFB72024E1DE6C1BE3 /* GooglePlacesCafeProvider.swift */; };
 		CDDD5E96CF6396F9E9E3BFC8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5876C8BF81841B61509AF2E /* LocationManager.swift */; };
 		CF1C3B80FB7152265A24AC33 /* AppStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F086F511F9863605DA97CAD /* AppStateModel.swift */; };
 		D09AE05C5B5E024695220945 /* FavoritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680AB98463290BE03A2306F /* FavoritesListView.swift */; };
@@ -157,7 +156,6 @@
 		ABC4052530D62832B31A3F81 /* CafeProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeProviders.swift; sourceTree = "<group>"; };
 		B73C7740271E556CAB894A46 /* CafeDokoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CafeDokoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C147609B9358F86548D9F3E5 /* GooglePlacesCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesCache.swift; sourceTree = "<group>"; };
-		C1E3F7DFB72024E1DE6C1BE3 /* GooglePlacesCafeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesCafeProvider.swift; sourceTree = "<group>"; };
 		C370C97E566FB49D9678CB64 /* CafeDokoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDokoAppTests.swift; sourceTree = "<group>"; };
 		CAD741A97D632FE8EDE0C0C7 /* CafeDokoApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CafeDokoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD39687730F700937904D830 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
@@ -223,7 +221,6 @@
 				7371CE17355785E82922E862 /* ChainMenuService.swift */,
 				9A4D03DD6E62C8CB2C76CD1C /* FavoritesManager.swift */,
 				C147609B9358F86548D9F3E5 /* GooglePlacesCache.swift */,
-				C1E3F7DFB72024E1DE6C1BE3 /* GooglePlacesCafeProvider.swift */,
 				F2456A7B28EFD75242A643FE /* GooglePlacesProvider.swift */,
 				DB596F4BB8B569F3480D7201 /* HistoryManager.swift */,
 				E5876C8BF81841B61509AF2E /* LocationManager.swift */,
@@ -506,7 +503,6 @@
 				D292CE3A24B159698BF2C52F /* ChainMenuService.swift in Sources */,
 				AC8F9015E19598A7C3198717 /* FavoritesManager.swift in Sources */,
 				1BDF3B65DF4E0AB4008C7DC0 /* GooglePlacesCache.swift in Sources */,
-				C5E8F0AEBCF47A43283CBD91 /* GooglePlacesCafeProvider.swift in Sources */,
 				5C19946CFAD1137BB4A19122 /* GooglePlacesProvider.swift in Sources */,
 				B176A85CF914180DDF7F80D5 /* HistoryManager.swift in Sources */,
 				CDDD5E96CF6396F9E9E3BFC8 /* LocationManager.swift in Sources */,

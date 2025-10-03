@@ -5,25 +5,17 @@ import CafeDokoCore
 /// Google Places APIを使用してカフェデータを取得するプロバイダー
 public struct GooglePlacesCafeProvider: CafeDataProviding {
     private let placesProvider: GooglePlacesProvider
-    private let locationManager: LocationManager?
+    private let locationManager: CLLocationManager
     
-    public init(apiKey: String, locationManager: LocationManager? = nil) {
+    public init(apiKey: String) {
         self.placesProvider = GooglePlacesProvider(apiKey: apiKey)
-        self.locationManager = locationManager
+        self.locationManager = CLLocationManager()
     }
     
     public func fetchChains() async throws -> [DokoCafeViewModel.Chain] {
-        // 現在地を取得（位置情報が利用可能な場合は実際の座標、それ以外はデフォルト）
-        let (latitude, longitude): (Double, Double)
-        
-        if let location = locationManager?.currentLocation {
-            latitude = location.coordinate.latitude
-            longitude = location.coordinate.longitude
-        } else {
-            let defaultCoord = LocationManager.defaultCoordinate
-            latitude = defaultCoord.latitude
-            longitude = defaultCoord.longitude
-        }
+        // 現在地を取得（仮の東京駅座標）
+        let latitude = 35.6812
+        let longitude = 139.7671
         
         // Google Places APIで近くのカフェを検索
         let places = try await placesProvider.searchNearbyCafes(

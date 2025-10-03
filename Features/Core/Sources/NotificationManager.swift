@@ -14,7 +14,9 @@ public final class NotificationManager: NSObject {
     
     public override init() {
         super.init()
-        checkAuthorizationStatus()
+        Task { @MainActor in
+            checkAuthorizationStatus()
+        }
     }
     
     /// 通知の許可をリクエスト
@@ -42,8 +44,8 @@ public final class NotificationManager: NSObject {
     public func checkAuthorizationStatus() {
         Task {
             let settings = await UNUserNotificationCenter.current().notificationSettings()
-            authorizationStatus = settings.authorizationStatus
-            logger.info("📋 通知の許可状態: \(String(describing: authorizationStatus))")
+            self.authorizationStatus = settings.authorizationStatus
+            logger.info("📋 通知の許可状態: \(String(describing: self.authorizationStatus))")
         }
     }
     
