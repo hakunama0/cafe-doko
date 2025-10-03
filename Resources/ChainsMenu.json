@@ -497,7 +497,565 @@
           ]
         }
       ]
+    },
+    {
+      "id": "saintmarc",
+      "name": "サンマルクカフェ",
+      "categories": [
+        {
+          "name": "ドリンク",
+          "products": [
+            {
+              "name": "ブレンドコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 340
+                },
+                {
+                  "size": "L",
+                  "price": 390
+                }
+              ]
+            },
+            {
+              "name": "アイスコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 340
+                },
+                {
+                  "size": "L",
+                  "price": 390
+                }
+              ]
+            },
+            {
+              "name": "カフェラテ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 410
+                },
+                {
+                  "size": "L",
+                  "price": 460
+                }
+              ]
+            },
+            {
+              "name": "カフェモカ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 460
+                },
+                {
+                  "size": "L",
+                  "price": 510
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "フード",
+          "products": [
+            {
+              "name": "チョコクロ",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 180
+                }
+              ]
+            },
+            {
+              "name": "クロワッサン",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 150
+                }
+              ]
+            },
+            {
+              "name": "ミックスサンド",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 480
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "veloce",
+      "name": "カフェ・ベローチェ",
+      "categories": [
+        {
+          "name": "ドリンク",
+          "products": [
+            {
+              "name": "ブレンドコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 220
+                },
+                {
+                  "size": "L",
+                  "price": 270
+                }
+              ]
+            },
+            {
+              "name": "アイスコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 220
+                },
+                {
+                  "size": "L",
+                  "price": 270
+                }
+              ]
+            },
+            {
+              "name": "カフェラテ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 290
+                },
+                {
+                  "size": "L",
+                  "price": 340
+                }
+              ]
+            },
+            {
+              "name": "カプチーノ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 290
+                },
+                {
+                  "size": "L",
+                  "price": 340
+                }
+              ]
+            },
+            {
+              "name": "エスプレッソ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 180
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "フード",
+          "products": [
+            {
+              "name": "ホットサンド",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 350
+                }
+              ]
+            },
+            {
+              "name": "クロワッサン",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ueshima",
+      "name": "上島珈琲店",
+      "categories": [
+        {
+          "name": "ドリンク",
+          "products": [
+            {
+              "name": "ブレンドコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 480
+                }
+              ]
+            },
+            {
+              "name": "アイスコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 480
+                }
+              ]
+            },
+            {
+              "name": "ネルドリップコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 680
+                }
+              ]
+            },
+            {
+              "name": "カフェオーレ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 530
+                }
+              ]
+            },
+            {
+              "name": "ウインナーコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 580
+                }
+              ]
+            },
+            {
+              "name": "ミルクセーキ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 580
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "フード",
+          "products": [
+            {
+              "name": "トーストセット",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 650
+                }
+              ]
+            },
+            {
+              "name": "ホットケーキ",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 780
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cafedecrie",
+      "name": "カフェ・ド・クリエ",
+      "categories": [
+        {
+          "name": "ドリンク",
+          "products": [
+            {
+              "name": "ブレンドコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 290
+                },
+                {
+                  "size": "M",
+                  "price": 340
+                },
+                {
+                  "size": "L",
+                  "price": 390
+                }
+              ]
+            },
+            {
+              "name": "アイスコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 290
+                },
+                {
+                  "size": "M",
+                  "price": 340
+                },
+                {
+                  "size": "L",
+                  "price": 390
+                }
+              ]
+            },
+            {
+              "name": "カフェラテ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 360
+                },
+                {
+                  "size": "M",
+                  "price": 410
+                },
+                {
+                  "size": "L",
+                  "price": 460
+                }
+              ]
+            },
+            {
+              "name": "カプチーノ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 360
+                },
+                {
+                  "size": "M",
+                  "price": 410
+                },
+                {
+                  "size": "L",
+                  "price": 460
+                }
+              ]
+            },
+            {
+              "name": "キャラメルラテ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 410
+                },
+                {
+                  "size": "M",
+                  "price": 460
+                },
+                {
+                  "size": "L",
+                  "price": 510
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "フード",
+          "products": [
+            {
+              "name": "クロワッサン",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 210
+                }
+              ]
+            },
+            {
+              "name": "サンドイッチ",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 420
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pronto",
+      "name": "プロント",
+      "categories": [
+        {
+          "name": "ドリンク",
+          "products": [
+            {
+              "name": "ブレンドコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 280
+                },
+                {
+                  "size": "M",
+                  "price": 330
+                },
+                {
+                  "size": "L",
+                  "price": 380
+                }
+              ]
+            },
+            {
+              "name": "アイスコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 280
+                },
+                {
+                  "size": "M",
+                  "price": 330
+                },
+                {
+                  "size": "L",
+                  "price": 380
+                }
+              ]
+            },
+            {
+              "name": "カフェラテ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 350
+                },
+                {
+                  "size": "M",
+                  "price": 400
+                },
+                {
+                  "size": "L",
+                  "price": 450
+                }
+              ]
+            },
+            {
+              "name": "カプチーノ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 350
+                },
+                {
+                  "size": "M",
+                  "price": 400
+                },
+                {
+                  "size": "L",
+                  "price": 450
+                }
+              ]
+            },
+            {
+              "name": "アイスカフェラテ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 400
+                },
+                {
+                  "size": "L",
+                  "price": 450
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "フード",
+          "products": [
+            {
+              "name": "クロワッサン",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 220
+                }
+              ]
+            },
+            {
+              "name": "ホットサンド",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 450
+                }
+              ]
+            },
+            {
+              "name": "パスタセット",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 890
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "last_updated": "2025-10-03 00:30:41"
+  "last_updated": "2025-10-03 10:02:39"
 }
