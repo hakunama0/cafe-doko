@@ -913,4 +913,7 @@ private struct LinkButton: View {
         .environment(FavoritesManager())
         .environment(HistoryManager())
         .environment(SettingsManager())
+        .environment(ChainMenuManager())
+        .environment(LocationManager())
+        .environment(NotificationManager())
 }
