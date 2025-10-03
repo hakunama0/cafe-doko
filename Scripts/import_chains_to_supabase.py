@@ -51,29 +51,32 @@ def import_chains():
         product_count = 0
         size_count = 0
         
-        for product in chain["products"]:
-            try:
-                # 商品を挿入
-                product_result = supabase.table("chain_products").insert({
-                    "chain_id": chain_id,
-                    "name": product["name"],
-                    "category": product["category"]
-                }).execute()
-                
-                product_id = product_result.data[0]["id"]
-                product_count += 1
-                
-                # サイズと価格を挿入
-                for size in product["sizes"]:
-                    supabase.table("product_sizes").insert({
-                        "product_id": product_id,
-                        "size": size["size"],
-                        "price": size["price"]
+        for category_data in chain.get("categories", []):
+            category_name = category_data.get("name", "ドリンク")
+            
+            for product in category_data.get("products", []):
+                try:
+                    # 商品を挿入
+                    product_result = supabase.table("chain_products").insert({
+                        "chain_id": chain_id,
+                        "name": product["name"],
+                        "category": category_name
                     }).execute()
-                    size_count += 1
-                
-            except Exception as e:
-                print(f"  ⚠️  商品 {product['name']} 登録エラー: {e}")
+                    
+                    product_id = product_result.data[0]["id"]
+                    product_count += 1
+                    
+                    # サイズと価格を挿入
+                    for size in product["sizes"]:
+                        supabase.table("product_sizes").insert({
+                            "product_id": product_id,
+                            "size": size["size"],
+                            "price": size["price"]
+                        }).execute()
+                        size_count += 1
+                    
+                except Exception as e:
+                    print(f"  ⚠️  商品 {product['name']} 登録エラー: {e}")
         
         print(f"  ✅ 商品 {product_count}件、サイズ {size_count}件 登録完了\n")
     
