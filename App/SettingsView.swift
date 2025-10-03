@@ -15,29 +15,6 @@ struct SettingsView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
-                    SettingsSection(title: "表示設定") {
-                        VStack(spacing: 0) {
-                            Picker("デフォルト表示モード", selection: $settingsManager.defaultViewMode) {
-                                ForEach(SettingsManager.ViewMode.allCases) { mode in
-                                    Text(mode.rawValue).tag(mode)
-                                }
-                            }
-                            .pickerStyle(.menu)
-                            .padding()
-                            
-                            Divider()
-                                .background(.white.opacity(0.1))
-                            
-                            Picker("デフォルトソート", selection: $settingsManager.defaultSortOption) {
-                                ForEach(SettingsManager.SortOption.allCases) { option in
-                                    Text(option.rawValue).tag(option)
-                                }
-                            }
-                            .pickerStyle(.menu)
-                            .padding()
-                        }
-                    }
-                    
                     SettingsSection(title: "通知") {
                         VStack(spacing: 0) {
                             Toggle("新しいカフェの通知", isOn: $settingsManager.newCafeNotificationEnabled)

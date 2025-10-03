@@ -17,16 +17,12 @@ struct ContentView: View {
     @State private var selectedSort: SortOption = .recommended
     @State private var selectedChain: DokoCafeViewModel.Chain?
     @State private var showingDetail = false
+    @State private var viewMode: ViewMode = .list
     @State private var showFavoritesOnly = false
     @State private var showingSettings = false
     @State private var showingHelp = false
     @State private var showingHistory = false
     @State private var showingFavoritesList = false
-    
-    // 設定から直接読み込むように変更
-    private var viewMode: ViewMode {
-        settingsManager.defaultViewMode == .list ? .list : .map
-    }
 
     var body: some View {
         NavigationStack {
@@ -170,8 +166,7 @@ struct ContentView: View {
     private var viewModeToggle: some View {
         Button {
             withAnimation(.easeInOut(duration: 0.3)) {
-                // 設定を直接更新
-                settingsManager.defaultViewMode = viewMode == .list ? .map : .list
+                viewMode = viewMode == .list ? .map : .list
             }
         } label: {
             Image(systemName: viewMode == .list ? "map.fill" : "list.bullet")
