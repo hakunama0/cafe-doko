@@ -16,6 +16,11 @@ struct CafeDokoApp: App {
 
     init() {
         _model = State(initialValue: RootAppModel(milestones: .sample()))
+        
+        // LocationManagerを先に初期化
+        let locationMgr = LocationManager()
+        _locationManager = State(initialValue: locationMgr)
+        _notificationManager = State(initialValue: NotificationManager())
 
         let config = (try? CafeConfigLoader().loadConfig()) ?? CafeConfig(provider: .mock)
         let viewModel: DokoCafeViewModel
@@ -45,9 +50,11 @@ struct CafeDokoApp: App {
             
         case .google_places:
             if let apiKey = config.googlePlacesApiKey, !apiKey.isEmpty {
-                // LocationManagerは@Stateで初期化されるため、ここでは参照のみ
-                // 実際の注入はbody内で行う
-                let provider = GooglePlacesCafeProvider(apiKey: apiKey)
+                // LocationManagerから現在地を取得するクロージャを渡す
+                let provider = GooglePlacesCafeProvider(apiKey: apiKey) { [locationMgr] in
+                    guard let location = locationMgr.currentLocation else { return nil }
+                    return (latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+                }
                 viewModel = DokoCafeViewModel(dataProvider: provider, imageProvider: SymbolCafeImageProvider())
             } else {
                 // Missing API key - use empty provider
@@ -57,10 +64,6 @@ struct CafeDokoApp: App {
         }
 
         _cafeModel = State(initialValue: viewModel)
-        
-        // LocationManagerの初期化
-        _locationManager = State(initialValue: LocationManager())
-        _notificationManager = State(initialValue: NotificationManager())
     }
 
     var body: some Scene {
