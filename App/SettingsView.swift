@@ -254,5 +254,6 @@ private struct BackgroundGradient: View {
         settingsManager: SettingsManager(),
         favoritesManager: FavoritesManager()
     )
+    .environment(NotificationManager())
 }
 
