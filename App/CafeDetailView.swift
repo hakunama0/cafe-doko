@@ -27,7 +27,7 @@ struct CafeDetailView: View {
                         HStack(spacing: 12) {
                             Label("\(chain.distance)m", systemImage: "figure.walk")
                                 .font(.subheadline)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(.white.opacity(0.9))
                             
                             if let updatedAt = chain.updatedAt {
                                 HStack(spacing: 4) {
@@ -35,7 +35,7 @@ struct CafeDetailView: View {
                                     Text(updatedAt, format: .dateTime.month().day())
                                 }
                                 .font(.subheadline)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(.white.opacity(0.9))
                             }
                         }
                     }
