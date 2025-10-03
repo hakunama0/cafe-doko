@@ -28,6 +28,9 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.cafedoko.app
         INFOPLIST_FILE: App/Supporting/Info.plist
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_CFBundleIconName: AppIcon
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
     dependencies:
       - target: CafeDokoCore
       - target: DokoCafeFeature
