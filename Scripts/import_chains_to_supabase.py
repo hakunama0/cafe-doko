@@ -31,7 +31,7 @@ def import_chains():
     for chain in chains:
         chain_id = chain["id"]
         chain_name = chain["name"]
-        keywords = chain["keywords"]
+        keywords = chain.get("keywords", [])
         
         print(f"🏪 {chain_name} を処理中...")
         
