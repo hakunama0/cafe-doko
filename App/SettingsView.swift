@@ -3,6 +3,7 @@ import CafeDokoCore
 
 struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(NotificationManager.self) private var notificationManager
     @State private var showingClearCacheAlert = false
     @State private var showingResetFavoritesAlert = false
     @State private var showingResetSettingsAlert = false
@@ -41,12 +42,28 @@ struct SettingsView: View {
                         VStack(spacing: 0) {
                             Toggle("新しいカフェの通知", isOn: $settingsManager.newCafeNotificationEnabled)
                                 .padding()
+                                .onChange(of: settingsManager.newCafeNotificationEnabled) { oldValue, newValue in
+                                    if newValue {
+                                        Task {
+                                            await notificationManager.requestPermission()
+                                        }
+                                    }
+                                }
                             
                             Divider()
                                 .background(.white.opacity(0.1))
                             
                             Toggle("お気に入りの営業開始通知", isOn: $settingsManager.favoriteOpeningNotificationEnabled)
                                 .padding()
+                                .onChange(of: settingsManager.favoriteOpeningNotificationEnabled) { oldValue, newValue in
+                                    if newValue {
+                                        Task {
+                                            await notificationManager.requestPermission()
+                                        }
+                                    } else {
+                                        notificationManager.cancelAllNotifications()
+                                    }
+                                }
                         }
                     }
                     
@@ -175,9 +192,7 @@ struct SettingsView: View {
     }
     
     private var appVersion: String {
-        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.1.0"
-        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "1"
-        return "\(version) (\(build))"
+        Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0.0"
     }
 }
 

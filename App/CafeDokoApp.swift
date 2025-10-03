@@ -1,6 +1,7 @@
 import SwiftUI
 import DokoCafeFeature
 import CafeDokoCore
+import UserNotifications
 
 @main
 struct CafeDokoApp: App {
@@ -11,6 +12,7 @@ struct CafeDokoApp: App {
     @State private var settingsManager = SettingsManager()
     @State private var chainMenuManager = ChainMenuManager()
     @State private var locationManager = LocationManager()
+    @State private var notificationManager = NotificationManager()
 
     init() {
         _model = State(initialValue: RootAppModel(milestones: .sample()))
@@ -58,6 +60,7 @@ struct CafeDokoApp: App {
         
         // LocationManagerの初期化
         _locationManager = State(initialValue: LocationManager())
+        _notificationManager = State(initialValue: NotificationManager())
     }
 
     var body: some Scene {
@@ -70,9 +73,17 @@ struct CafeDokoApp: App {
                 .environment(settingsManager)
                 .environment(chainMenuManager)
                 .environment(locationManager)
+                .environment(notificationManager)
                 .task {
+                    // 通知デリゲートを設定
+                    UNUserNotificationCenter.current().delegate = notificationManager
+                    
                     // 位置情報の許可をリクエスト
                     locationManager.requestPermission()
+                    
+                    // 通知の許可をリクエスト（初回のみ表示される）
+                    await notificationManager.requestPermission()
+                    
                     await cafeModel.reload()
                 }
         }
