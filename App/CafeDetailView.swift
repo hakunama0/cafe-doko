@@ -146,6 +146,7 @@ struct CafeDetailView: View {
                                 .font(.headline)
                                 .frame(maxWidth: .infinity)
                                 .padding(.vertical, 16)
+                                .foregroundStyle(.white)
                         }
                         .buttonStyle(iOS26ButtonStyle())
                         .tint(.blue)
