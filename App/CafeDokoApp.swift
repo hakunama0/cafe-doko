@@ -50,12 +50,19 @@ struct CafeDokoApp: App {
             
         case .google_places:
             if let apiKey = config.googlePlacesApiKey, !apiKey.isEmpty {
-                // LocationManagerから現在地を取得するクロージャを渡す
-                let provider = GooglePlacesCafeProvider(apiKey: apiKey) { [locationMgr] in
+                // HybridCafeProviderを使用（Google Places + Supabase価格情報）
+                let chainMgr = ChainMenuManager()
+                let provider = HybridCafeProvider(
+                    apiKey: apiKey,
+                    chainMenuManager: chainMgr
+                ) { [locationMgr] in
                     guard let location = locationMgr.currentLocation else { return nil }
                     return (latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
                 }
                 viewModel = DokoCafeViewModel(dataProvider: provider, imageProvider: SymbolCafeImageProvider())
+                
+                // ChainMenuManagerを更新
+                _chainMenuManager = State(initialValue: chainMgr)
             } else {
                 // Missing API key - use empty provider
                 let provider = EmptyCafeDataProvider()

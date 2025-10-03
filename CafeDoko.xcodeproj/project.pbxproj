@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0DE82BBD8E27B900D960D511 /* CafeDokoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73C7740271E556CAB894A46 /* CafeDokoCore.framework */; };
 		111F5F32FDE30F0B8C63453D /* GooglePlacesCafeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E8FDE853E91F90EF5314A /* GooglePlacesCafeProvider.swift */; };
+		1328559CB364DCF6CE092546 /* HybridCafeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E78C2D2C41B06C9C12BE69D /* HybridCafeProvider.swift */; };
 		16327C9EFB2C65AA5D21EAB9 /* CafeDokoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73C7740271E556CAB894A46 /* CafeDokoCore.framework */; };
 		16B1754683EE0F7ABCEFE3CD /* CafeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9DC18D52FE1933EE3FE578 /* CafeConfigurator.swift */; };
 		175DEBD86476845459E25947 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1294A13BC8D8097EACBF48 /* SettingsView.swift */; };
@@ -133,6 +134,7 @@
 /* Begin PBXFileReference section */
 		0270E89D52F6ADA12EF756EE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		036BF4C41670146AE04F7F25 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		0E78C2D2C41B06C9C12BE69D /* HybridCafeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridCafeProvider.swift; sourceTree = "<group>"; };
 		0F086F511F9863605DA97CAD /* AppStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateModel.swift; sourceTree = "<group>"; };
 		226263A22D9DF56EF5FDC08A /* CafeDokoCoreTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CafeDokoCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2421FF43693D6FE1CFD39667 /* RootAppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAppModelTests.swift; sourceTree = "<group>"; };
@@ -159,7 +161,7 @@
 		B73C7740271E556CAB894A46 /* CafeDokoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CafeDokoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C147609B9358F86548D9F3E5 /* GooglePlacesCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesCache.swift; sourceTree = "<group>"; };
 		C370C97E566FB49D9678CB64 /* CafeDokoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDokoAppTests.swift; sourceTree = "<group>"; };
-		CAD741A97D632FE8EDE0C0C7 /* CafeDokoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeDokoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD741A97D632FE8EDE0C0C7 /* CafeDokoApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CafeDokoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD39687730F700937904D830 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		D55F81E8512F1372DFF7907E /* BusinessHoursParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHoursParserTests.swift; sourceTree = "<group>"; };
 		DB596F4BB8B569F3480D7201 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				ABC4052530D62832B31A3F81 /* CafeProviders.swift */,
 				89DBC3EA12D15BBBB188C30E /* DokoCafeFeature.swift */,
 				636E8FDE853E91F90EF5314A /* GooglePlacesCafeProvider.swift */,
+				0E78C2D2C41B06C9C12BE69D /* HybridCafeProvider.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -466,15 +469,15 @@
 			};
 			buildConfigurationList = F5E7EFBCACDC192069CD4447 /* Build configuration list for PBXProject "CafeDoko" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = ja;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				en,
-				ja,
 			);
 			mainGroup = 7AE988A262CE481A264F69BF;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -568,6 +571,7 @@
 				6A9D9898DE0E540B37DD471E /* CafeProviders.swift in Sources */,
 				5DA759DB061CEF0901461310 /* DokoCafeFeature.swift in Sources */,
 				111F5F32FDE30F0B8C63453D /* GooglePlacesCafeProvider.swift in Sources */,
+				1328559CB364DCF6CE092546 /* HybridCafeProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,13 +615,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U8DBRGBSWJ;
 				INFOPLIST_FILE = App/Supporting/Info.plist;
 				INFOPLIST_KEY_CFBundleIconName = AppIcon;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -625,10 +626,6 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.app;
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -778,13 +775,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U8DBRGBSWJ;
 				INFOPLIST_FILE = App/Supporting/Info.plist;
 				INFOPLIST_KEY_CFBundleIconName = AppIcon;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -792,10 +786,6 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.app;
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
