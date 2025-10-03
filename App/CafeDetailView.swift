@@ -642,22 +642,16 @@ private struct iOS26ButtonStyle: ButtonStyle {
 #Preview {
     CafeDetailView(
         chain: DokoCafeViewModel.Chain(
-            id: "preview-1",
             name: "スターバックス 渋谷店",
-            placeId: "preview-place-1",
             price: 450,
             sizeLabel: "Tall",
             distance: 250,
             tags: ["WiFi", "電源", "禁煙"],
             address: "東京都渋谷区道玄坂2-1-1",
-            phoneNumber: "03-1234-5678",
             openingHours: "7:00 - 23:00",
-            isOpen: true,
-            rating: 4.5,
-            userRatingsTotal: 1234,
-            photos: []
+            phoneNumber: "03-1234-5678"
         ),
-        descriptor: CafeImageDescriptor(systemName: "cup.and.saucer.fill", color: .green),
+        descriptor: .systemSymbol("cup.and.saucer.fill"),
         favoritesManager: FavoritesManager()
     )
     .environment(ChainMenuManager())
