@@ -91,9 +91,8 @@ public final class SettingsManager {
             }
         }
         
-        // 設定関連以外のUserDefaultsキーをクリア（オプション）
-        // 必要に応じて特定のキーのみクリアするように調整可能
-        // 例: UserDefaults.standard.removeObject(forKey: "someSpecificCacheKey")
+        // Google Places APIのキャッシュは自動的に5分で期限切れになります
+        // 必要に応じてアプリを再起動するか、時間経過を待ってください
         
         print("✅ キャッシュをクリアしました")
     }
