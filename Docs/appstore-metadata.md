@@ -73,13 +73,12 @@
 
 ### サポートURL
 ```
-https://github.com/hakunama0/cafe-doko
+https://hakunama0.github.io/cafe-doko/
 ```
-（一旦GitHubリポジトリを使用。専用サイトがあればそちらに変更）
 
 ### マーケティングURL（任意）
 ```
-https://github.com/hakunama0/cafe-doko
+https://hakunama0.github.io/cafe-doko/
 ```
 
 ### 著作権（Copyright）
@@ -177,9 +176,8 @@ APIキーは本番環境用のものが設定されています。
 
 ### プライバシーポリシーURL
 ```
-https://github.com/hakunama0/cafe-doko/blob/main/PRIVACY.md
+https://hakunama0.github.io/cafe-doko/privacy.html
 ```
-（要作成）
 
 ---
 
