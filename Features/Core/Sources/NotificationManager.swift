@@ -14,8 +14,8 @@ public final class NotificationManager: NSObject {
     
     public override init() {
         super.init()
-        Task { @MainActor in
-            checkAuthorizationStatus()
+        Task { @MainActor [weak self] in
+            self?.checkAuthorizationStatus()
         }
     }
     
