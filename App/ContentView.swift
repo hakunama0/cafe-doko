@@ -147,6 +147,20 @@ struct ContentView: View {
             .sheet(isPresented: $showingFavoritesList) {
                 FavoritesListView()
             }
+            .onAppear {
+                // 設定から初期表示モードを読み込む
+                viewMode = settingsManager.defaultViewMode == .list ? .list : .map
+                selectedSort = convertToSortOption(settingsManager.defaultSortOption)
+            }
+        }
+    }
+    
+    // SettingsManager.SortOption を SortOption に変換
+    private func convertToSortOption(_ option: SettingsManager.SortOption) -> SortOption {
+        switch option {
+        case .recommended: return .recommended
+        case .nearby: return .nearby
+        case .priceLow: return .price
         }
     }
 
