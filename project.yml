@@ -19,7 +19,7 @@ targets:
         excludes:
           - Supporting
     resources:
-      - Resources/Assets.xcassets
+      - App/Assets.xcassets
       - Resources/CafeFacts.json
       - Resources/ChainsMenu.json
       - Config/cafe-doko-config.json
