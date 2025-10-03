@@ -1,0 +1,1009 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DE82BBD8E27B900D960D511 /* CafeDokoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73C7740271E556CAB894A46 /* CafeDokoCore.framework */; };
+		111F5F32FDE30F0B8C63453D /* GooglePlacesCafeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E8FDE853E91F90EF5314A /* GooglePlacesCafeProvider.swift */; };
+		16327C9EFB2C65AA5D21EAB9 /* CafeDokoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73C7740271E556CAB894A46 /* CafeDokoCore.framework */; };
+		16B1754683EE0F7ABCEFE3CD /* CafeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9DC18D52FE1933EE3FE578 /* CafeConfigurator.swift */; };
+		175DEBD86476845459E25947 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1294A13BC8D8097EACBF48 /* SettingsView.swift */; };
+		1BDF3B65DF4E0AB4008C7DC0 /* GooglePlacesCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147609B9358F86548D9F3E5 /* GooglePlacesCache.swift */; };
+		22E5AE682DFCC7A19730237C /* CafeDokoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73C7740271E556CAB894A46 /* CafeDokoCore.framework */; };
+		261FFA405942F31FF9402E05 /* DokoCafeFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F473876F8E603A881E7FE5 /* DokoCafeFeature.framework */; };
+		27D003A889B4DB625B2D0923 /* DokoCafeFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37F473876F8E603A881E7FE5 /* DokoCafeFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		457291281F8686800D6F9251 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BF4C41670146AE04F7F25 /* SettingsManager.swift */; };
+		492545F4910355399F9BF509 /* CafeDokoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55F44A748B47F85D0AA333 /* CafeDokoApp.swift */; };
+		57B2E2EC576EB3D45D5A858F /* CafeDokoCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B73C7740271E556CAB894A46 /* CafeDokoCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C19946CFAD1137BB4A19122 /* GooglePlacesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2456A7B28EFD75242A643FE /* GooglePlacesProvider.swift */; };
+		5DA759DB061CEF0901461310 /* DokoCafeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DBC3EA12D15BBBB188C30E /* DokoCafeFeature.swift */; };
+		6A9D9898DE0E540B37DD471E /* CafeProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC4052530D62832B31A3F81 /* CafeProviders.swift */; };
+		6CD73345E2077964C1882588 /* CafeDokoCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B73C7740271E556CAB894A46 /* CafeDokoCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72EA6FD0584514060761739D /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58865B33F33559DAE310108B /* HelpView.swift */; };
+		72F0ABF287DF9B5F172E3FC3 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39687730F700937904D830 /* HistoryView.swift */; };
+		75AC64003920191A5B378D09 /* CafeDokoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C370C97E566FB49D9678CB64 /* CafeDokoAppTests.swift */; };
+		AC8F9015E19598A7C3198717 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D03DD6E62C8CB2C76CD1C /* FavoritesManager.swift */; };
+		B176A85CF914180DDF7F80D5 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB596F4BB8B569F3480D7201 /* HistoryManager.swift */; };
+		B695C25513C75754A518AB16 /* DokoCafeFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37F473876F8E603A881E7FE5 /* DokoCafeFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDDD5E96CF6396F9E9E3BFC8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5876C8BF81841B61509AF2E /* LocationManager.swift */; };
+		CF1C3B80FB7152265A24AC33 /* AppStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F086F511F9863605DA97CAD /* AppStateModel.swift */; };
+		D09AE05C5B5E024695220945 /* FavoritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680AB98463290BE03A2306F /* FavoritesListView.swift */; };
+		D19FA2B3B810D4412FF59D7E /* MCPBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604F2D28FF17B2C659BFD619 /* MCPBridge.swift */; };
+		D292CE3A24B159698BF2C52F /* ChainMenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371CE17355785E82922E862 /* ChainMenuService.swift */; };
+		D31AC62D5974777DB51327F0 /* DokoCafeFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947266292CF322BC777EFDBB /* DokoCafeFeatureTests.swift */; };
+		D58704C4567E024DCE723601 /* CafeMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865AA39BD846ACA0FCC4E28C /* CafeMapView.swift */; };
+		DB211ADF7F2E201393FCEC05 /* BusinessHoursParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BC07774F1950684FC817BE /* BusinessHoursParser.swift */; };
+		DC3CADE4A019B99FC59AB924 /* CafeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8698A29345E25A90CD5371 /* CafeDetailView.swift */; };
+		DFE11206A4A88E47A8D82F73 /* ChainMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959D326BBB45718BBC547320 /* ChainMenuManager.swift */; };
+		E49FB66E7B45E6920B871876 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D59BAF31785DE2EA0241A /* ContentView.swift */; };
+		ED6FD6D538F2499C41E5C3EE /* MCPBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B967AAD9E774C2A2B1B173 /* MCPBridgeTests.swift */; };
+		FCA4212E84978CF99E62A2DC /* RootAppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2421FF43693D6FE1CFD39667 /* RootAppModelTests.swift */; };
+		FCE5A1A5018E21DDFBC0ADFE /* DokoCafeFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F473876F8E603A881E7FE5 /* DokoCafeFeature.framework */; };
+		FF00823538CFDEF636BA46D8 /* BusinessHoursParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55F81E8512F1372DFF7907E /* BusinessHoursParserTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03FA044B284371992CFE8612 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FDD75B6333CF9F299E391E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1821E4C11D5D76B74E86D35;
+			remoteInfo = CafeDokoCore;
+		};
+		12369963E983D4DA6BC515AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FDD75B6333CF9F299E391E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0794B382B29B8F95DA84E8A5;
+			remoteInfo = CafeDokoApp;
+		};
+		181444B6517ECF01C4140E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FDD75B6333CF9F299E391E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1821E4C11D5D76B74E86D35;
+			remoteInfo = CafeDokoCore;
+		};
+		1B239C069AC0AF7A94E43AEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FDD75B6333CF9F299E391E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54712FBB1032CDD6758F4FC0;
+			remoteInfo = DokoCafeFeature;
+		};
+		475B6F2F002173E417EA2E3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FDD75B6333CF9F299E391E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1821E4C11D5D76B74E86D35;
+			remoteInfo = CafeDokoCore;
+		};
+		D8ADC6DE94E11C6120C1990F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FDD75B6333CF9F299E391E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54712FBB1032CDD6758F4FC0;
+			remoteInfo = DokoCafeFeature;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9398C1F9E5E375B84178A76A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				57B2E2EC576EB3D45D5A858F /* CafeDokoCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC70D9D49150F48109DE3F38 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B695C25513C75754A518AB16 /* DokoCafeFeature.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34A6E77CE53734C339BE99F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6CD73345E2077964C1882588 /* CafeDokoCore.framework in Embed Frameworks */,
+				27D003A889B4DB625B2D0923 /* DokoCafeFeature.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		036BF4C41670146AE04F7F25 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		0F086F511F9863605DA97CAD /* AppStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateModel.swift; sourceTree = "<group>"; };
+		226263A22D9DF56EF5FDC08A /* CafeDokoCoreTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CafeDokoCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2421FF43693D6FE1CFD39667 /* RootAppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAppModelTests.swift; sourceTree = "<group>"; };
+		36B967AAD9E774C2A2B1B173 /* MCPBridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPBridgeTests.swift; sourceTree = "<group>"; };
+		37F473876F8E603A881E7FE5 /* DokoCafeFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DokoCafeFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		403D59BAF31785DE2EA0241A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F9DC18D52FE1933EE3FE578 /* CafeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeConfigurator.swift; sourceTree = "<group>"; };
+		5680AB98463290BE03A2306F /* FavoritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListView.swift; sourceTree = "<group>"; };
+		5835F18F520329CAD0E9C23B /* CafeDokoAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CafeDokoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58865B33F33559DAE310108B /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		604F2D28FF17B2C659BFD619 /* MCPBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPBridge.swift; sourceTree = "<group>"; };
+		636E8FDE853E91F90EF5314A /* GooglePlacesCafeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesCafeProvider.swift; sourceTree = "<group>"; };
+		6E8698A29345E25A90CD5371 /* CafeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDetailView.swift; sourceTree = "<group>"; };
+		7371CE17355785E82922E862 /* ChainMenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainMenuService.swift; sourceTree = "<group>"; };
+		865AA39BD846ACA0FCC4E28C /* CafeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMapView.swift; sourceTree = "<group>"; };
+		89DBC3EA12D15BBBB188C30E /* DokoCafeFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokoCafeFeature.swift; sourceTree = "<group>"; };
+		8E1294A13BC8D8097EACBF48 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		947266292CF322BC777EFDBB /* DokoCafeFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokoCafeFeatureTests.swift; sourceTree = "<group>"; };
+		959D326BBB45718BBC547320 /* ChainMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainMenuManager.swift; sourceTree = "<group>"; };
+		967757632BC7F44F4C74A2D5 /* DokoCafeFeatureTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DokoCafeFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4D03DD6E62C8CB2C76CD1C /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
+		ABC4052530D62832B31A3F81 /* CafeProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeProviders.swift; sourceTree = "<group>"; };
+		B73C7740271E556CAB894A46 /* CafeDokoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CafeDokoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C147609B9358F86548D9F3E5 /* GooglePlacesCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesCache.swift; sourceTree = "<group>"; };
+		C370C97E566FB49D9678CB64 /* CafeDokoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDokoAppTests.swift; sourceTree = "<group>"; };
+		CAD741A97D632FE8EDE0C0C7 /* CafeDokoApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CafeDokoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD39687730F700937904D830 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		D55F81E8512F1372DFF7907E /* BusinessHoursParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHoursParserTests.swift; sourceTree = "<group>"; };
+		DB596F4BB8B569F3480D7201 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
+		E5876C8BF81841B61509AF2E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E7BC07774F1950684FC817BE /* BusinessHoursParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHoursParser.swift; sourceTree = "<group>"; };
+		EB55F44A748B47F85D0AA333 /* CafeDokoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDokoApp.swift; sourceTree = "<group>"; };
+		F2456A7B28EFD75242A643FE /* GooglePlacesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesProvider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DD1B6593761A4F7EE62688E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E5AE682DFCC7A19730237C /* CafeDokoCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD7595E6D90CA54ACFF748F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261FFA405942F31FF9402E05 /* DokoCafeFeature.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4FCAB9CDFAF7E7F079C734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DE82BBD8E27B900D960D511 /* CafeDokoCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A6F9E14DE13D227013ED86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16327C9EFB2C65AA5D21EAB9 /* CafeDokoCore.framework in Frameworks */,
+				FCE5A1A5018E21DDFBC0ADFE /* DokoCafeFeature.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B5B0118726075EAF3A327F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				32759186928D26B50FB5522A /* AppTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		21509C44D5DB1327F19991DD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0F086F511F9863605DA97CAD /* AppStateModel.swift */,
+				E7BC07774F1950684FC817BE /* BusinessHoursParser.swift */,
+				959D326BBB45718BBC547320 /* ChainMenuManager.swift */,
+				7371CE17355785E82922E862 /* ChainMenuService.swift */,
+				9A4D03DD6E62C8CB2C76CD1C /* FavoritesManager.swift */,
+				C147609B9358F86548D9F3E5 /* GooglePlacesCache.swift */,
+				F2456A7B28EFD75242A643FE /* GooglePlacesProvider.swift */,
+				DB596F4BB8B569F3480D7201 /* HistoryManager.swift */,
+				E5876C8BF81841B61509AF2E /* LocationManager.swift */,
+				604F2D28FF17B2C659BFD619 /* MCPBridge.swift */,
+				036BF4C41670146AE04F7F25 /* SettingsManager.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		32759186928D26B50FB5522A /* AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C370C97E566FB49D9678CB64 /* CafeDokoAppTests.swift */,
+			);
+			path = AppTests;
+			sourceTree = "<group>";
+		};
+		3DB797054DA1D89A973A4AC9 /* DokoCafe */ = {
+			isa = PBXGroup;
+			children = (
+				5CB9ADC28BBC0A9C5822D8C7 /* Sources */,
+				4E63F99827C139E83965B13F /* Tests */,
+			);
+			path = DokoCafe;
+			sourceTree = "<group>";
+		};
+		4A1CB74046758088E1382CD2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6E8698A29345E25A90CD5371 /* CafeDetailView.swift */,
+				EB55F44A748B47F85D0AA333 /* CafeDokoApp.swift */,
+				865AA39BD846ACA0FCC4E28C /* CafeMapView.swift */,
+				403D59BAF31785DE2EA0241A /* ContentView.swift */,
+				5680AB98463290BE03A2306F /* FavoritesListView.swift */,
+				58865B33F33559DAE310108B /* HelpView.swift */,
+				CD39687730F700937904D830 /* HistoryView.swift */,
+				8E1294A13BC8D8097EACBF48 /* SettingsView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4E63F99827C139E83965B13F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				947266292CF322BC777EFDBB /* DokoCafeFeatureTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5CB9ADC28BBC0A9C5822D8C7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4F9DC18D52FE1933EE3FE578 /* CafeConfigurator.swift */,
+				ABC4052530D62832B31A3F81 /* CafeProviders.swift */,
+				89DBC3EA12D15BBBB188C30E /* DokoCafeFeature.swift */,
+				636E8FDE853E91F90EF5314A /* GooglePlacesCafeProvider.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		726DBDC98A3A9372A6F8FD6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAD741A97D632FE8EDE0C0C7 /* CafeDokoApp.app */,
+				5835F18F520329CAD0E9C23B /* CafeDokoAppTests.xctest */,
+				B73C7740271E556CAB894A46 /* CafeDokoCore.framework */,
+				226263A22D9DF56EF5FDC08A /* CafeDokoCoreTests.xctest */,
+				37F473876F8E603A881E7FE5 /* DokoCafeFeature.framework */,
+				967757632BC7F44F4C74A2D5 /* DokoCafeFeatureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AE988A262CE481A264F69BF = {
+			isa = PBXGroup;
+			children = (
+				4A1CB74046758088E1382CD2 /* App */,
+				C4FA23A81289B1578E5D8ACA /* Features */,
+				14B5B0118726075EAF3A327F /* Tests */,
+				726DBDC98A3A9372A6F8FD6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4FA23A81289B1578E5D8ACA /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CA11D44641FBC647472105D8 /* Core */,
+				3DB797054DA1D89A973A4AC9 /* DokoCafe */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CA11D44641FBC647472105D8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				21509C44D5DB1327F19991DD /* Sources */,
+				CF3CE841BEAA1F7CA2BBE495 /* Tests */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CF3CE841BEAA1F7CA2BBE495 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D55F81E8512F1372DFF7907E /* BusinessHoursParserTests.swift */,
+				36B967AAD9E774C2A2B1B173 /* MCPBridgeTests.swift */,
+				2421FF43693D6FE1CFD39667 /* RootAppModelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0794B382B29B8F95DA84E8A5 /* CafeDokoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E12E55927A1E16AF4E4CF5C /* Build configuration list for PBXNativeTarget "CafeDokoApp" */;
+			buildPhases = (
+				8B2973F775DBBD7924A98D67 /* Sources */,
+				C4A6F9E14DE13D227013ED86 /* Frameworks */,
+				D34A6E77CE53734C339BE99F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8748446FBB9450C26A5376C8 /* PBXTargetDependency */,
+				305B12432ABD1B1B3A75270B /* PBXTargetDependency */,
+			);
+			name = CafeDokoApp;
+			packageProductDependencies = (
+			);
+			productName = CafeDokoApp;
+			productReference = CAD741A97D632FE8EDE0C0C7 /* CafeDokoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CFB08CD341F0C38448811D7 /* CafeDokoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D63A1B33D67D24E3150B3E2B /* Build configuration list for PBXNativeTarget "CafeDokoAppTests" */;
+			buildPhases = (
+				68F15D6ED0FDFFC6CC901EB1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6F0E8107F6582B93345D866 /* PBXTargetDependency */,
+			);
+			name = CafeDokoAppTests;
+			packageProductDependencies = (
+			);
+			productName = CafeDokoAppTests;
+			productReference = 5835F18F520329CAD0E9C23B /* CafeDokoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54712FBB1032CDD6758F4FC0 /* DokoCafeFeature */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44DEFE4C544FB1F55CF8BD82 /* Build configuration list for PBXNativeTarget "DokoCafeFeature" */;
+			buildPhases = (
+				D6BF900802B9C42DFA6895EB /* Sources */,
+				AA4FCAB9CDFAF7E7F079C734 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF47D13451F89A0A230A3977 /* PBXTargetDependency */,
+			);
+			name = DokoCafeFeature;
+			packageProductDependencies = (
+			);
+			productName = DokoCafeFeature;
+			productReference = 37F473876F8E603A881E7FE5 /* DokoCafeFeature.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1821E4C11D5D76B74E86D35 /* CafeDokoCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6E48E4AA188B67FF3327122 /* Build configuration list for PBXNativeTarget "CafeDokoCore" */;
+			buildPhases = (
+				7F57854412115E835FFBAF23 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CafeDokoCore;
+			packageProductDependencies = (
+			);
+			productName = CafeDokoCore;
+			productReference = B73C7740271E556CAB894A46 /* CafeDokoCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFFD8FD439C136B830151554 /* CafeDokoCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190F1146B9F93E5720C85DEF /* Build configuration list for PBXNativeTarget "CafeDokoCoreTests" */;
+			buildPhases = (
+				BF7AB9F34A02B91C74115D48 /* Sources */,
+				0DD1B6593761A4F7EE62688E /* Frameworks */,
+				9398C1F9E5E375B84178A76A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				718CB5BD79B1AB175BC50411 /* PBXTargetDependency */,
+			);
+			name = CafeDokoCoreTests;
+			packageProductDependencies = (
+			);
+			productName = CafeDokoCoreTests;
+			productReference = 226263A22D9DF56EF5FDC08A /* CafeDokoCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFD5EAD756BCAB49A9C4306E /* DokoCafeFeatureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B14A04944D514ADE1F2E01B /* Build configuration list for PBXNativeTarget "DokoCafeFeatureTests" */;
+			buildPhases = (
+				93840E4C52400AA60C9C981F /* Sources */,
+				3DD7595E6D90CA54ACFF748F /* Frameworks */,
+				CC70D9D49150F48109DE3F38 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5395893864841B307F631E5C /* PBXTargetDependency */,
+			);
+			name = DokoCafeFeatureTests;
+			packageProductDependencies = (
+			);
+			productName = DokoCafeFeatureTests;
+			productReference = 967757632BC7F44F4C74A2D5 /* DokoCafeFeatureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FDD75B6333CF9F299E391E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = F5E7EFBCACDC192069CD4447 /* Build configuration list for PBXProject "CafeDoko" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7AE988A262CE481A264F69BF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0794B382B29B8F95DA84E8A5 /* CafeDokoApp */,
+				2CFB08CD341F0C38448811D7 /* CafeDokoAppTests */,
+				A1821E4C11D5D76B74E86D35 /* CafeDokoCore */,
+				CFFD8FD439C136B830151554 /* CafeDokoCoreTests */,
+				54712FBB1032CDD6758F4FC0 /* DokoCafeFeature */,
+				DFD5EAD756BCAB49A9C4306E /* DokoCafeFeatureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68F15D6ED0FDFFC6CC901EB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AC64003920191A5B378D09 /* CafeDokoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F57854412115E835FFBAF23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1C3B80FB7152265A24AC33 /* AppStateModel.swift in Sources */,
+				DB211ADF7F2E201393FCEC05 /* BusinessHoursParser.swift in Sources */,
+				DFE11206A4A88E47A8D82F73 /* ChainMenuManager.swift in Sources */,
+				D292CE3A24B159698BF2C52F /* ChainMenuService.swift in Sources */,
+				AC8F9015E19598A7C3198717 /* FavoritesManager.swift in Sources */,
+				1BDF3B65DF4E0AB4008C7DC0 /* GooglePlacesCache.swift in Sources */,
+				5C19946CFAD1137BB4A19122 /* GooglePlacesProvider.swift in Sources */,
+				B176A85CF914180DDF7F80D5 /* HistoryManager.swift in Sources */,
+				CDDD5E96CF6396F9E9E3BFC8 /* LocationManager.swift in Sources */,
+				D19FA2B3B810D4412FF59D7E /* MCPBridge.swift in Sources */,
+				457291281F8686800D6F9251 /* SettingsManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B2973F775DBBD7924A98D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3CADE4A019B99FC59AB924 /* CafeDetailView.swift in Sources */,
+				492545F4910355399F9BF509 /* CafeDokoApp.swift in Sources */,
+				D58704C4567E024DCE723601 /* CafeMapView.swift in Sources */,
+				E49FB66E7B45E6920B871876 /* ContentView.swift in Sources */,
+				D09AE05C5B5E024695220945 /* FavoritesListView.swift in Sources */,
+				72EA6FD0584514060761739D /* HelpView.swift in Sources */,
+				72F0ABF287DF9B5F172E3FC3 /* HistoryView.swift in Sources */,
+				175DEBD86476845459E25947 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93840E4C52400AA60C9C981F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31AC62D5974777DB51327F0 /* DokoCafeFeatureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF7AB9F34A02B91C74115D48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF00823538CFDEF636BA46D8 /* BusinessHoursParserTests.swift in Sources */,
+				ED6FD6D538F2499C41E5C3EE /* MCPBridgeTests.swift in Sources */,
+				FCA4212E84978CF99E62A2DC /* RootAppModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6BF900802B9C42DFA6895EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B1754683EE0F7ABCEFE3CD /* CafeConfigurator.swift in Sources */,
+				6A9D9898DE0E540B37DD471E /* CafeProviders.swift in Sources */,
+				5DA759DB061CEF0901461310 /* DokoCafeFeature.swift in Sources */,
+				111F5F32FDE30F0B8C63453D /* GooglePlacesCafeProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		305B12432ABD1B1B3A75270B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54712FBB1032CDD6758F4FC0 /* DokoCafeFeature */;
+			targetProxy = D8ADC6DE94E11C6120C1990F /* PBXContainerItemProxy */;
+		};
+		5395893864841B307F631E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54712FBB1032CDD6758F4FC0 /* DokoCafeFeature */;
+			targetProxy = 1B239C069AC0AF7A94E43AEB /* PBXContainerItemProxy */;
+		};
+		718CB5BD79B1AB175BC50411 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1821E4C11D5D76B74E86D35 /* CafeDokoCore */;
+			targetProxy = 181444B6517ECF01C4140E17 /* PBXContainerItemProxy */;
+		};
+		8748446FBB9450C26A5376C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1821E4C11D5D76B74E86D35 /* CafeDokoCore */;
+			targetProxy = 475B6F2F002173E417EA2E3D /* PBXContainerItemProxy */;
+		};
+		BF47D13451F89A0A230A3977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1821E4C11D5D76B74E86D35 /* CafeDokoCore */;
+			targetProxy = 03FA044B284371992CFE8612 /* PBXContainerItemProxy */;
+		};
+		C6F0E8107F6582B93345D866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0794B382B29B8F95DA84E8A5 /* CafeDokoApp */;
+			targetProxy = 12369963E983D4DA6BC515AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B8A5B422DF2E359E57D2529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Supporting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		295505837BF64B4140F9642D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.CafeDokoAppTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CafeDokoApp.app/CafeDokoApp";
+			};
+			name = Release;
+		};
+		3BEB74EBD34FA5ADBFE24C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		63CFF1C998D790B75EBDE3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULE_VERIFIER = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.dokocafe;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		645BDAAC1309DD3EF328E684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULE_VERIFIER = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.core;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		7928DD795534EE6145DE8C56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.CafeDokoCoreTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CB1197551317FF3B2D7FC9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Supporting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0DAA6246DB1F929F99F6698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		B20D57F7C522440022ADD689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.DokoCafeFeatureTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C162CE34685CE62EBB5830C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.DokoCafeFeatureTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D705D2AA8611DD0AC3F84C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULE_VERIFIER = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.core;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		D7C3A31719F4CD1A1A1A3BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.CafeDokoAppTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CafeDokoApp.app/CafeDokoApp";
+			};
+			name = Debug;
+		};
+		E502A5ABF1DEEEC4E0BD8FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.CafeDokoCoreTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD21922D21B5B488E5DC3374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULE_VERIFIER = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cafedoko.dokocafe;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		190F1146B9F93E5720C85DEF /* Build configuration list for PBXNativeTarget "CafeDokoCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7928DD795534EE6145DE8C56 /* Debug */,
+				E502A5ABF1DEEEC4E0BD8FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3B14A04944D514ADE1F2E01B /* Build configuration list for PBXNativeTarget "DokoCafeFeatureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20D57F7C522440022ADD689 /* Debug */,
+				C162CE34685CE62EBB5830C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		44DEFE4C544FB1F55CF8BD82 /* Build configuration list for PBXNativeTarget "DokoCafeFeature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD21922D21B5B488E5DC3374 /* Debug */,
+				63CFF1C998D790B75EBDE3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7E12E55927A1E16AF4E4CF5C /* Build configuration list for PBXNativeTarget "CafeDokoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B8A5B422DF2E359E57D2529 /* Debug */,
+				9CB1197551317FF3B2D7FC9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D63A1B33D67D24E3150B3E2B /* Build configuration list for PBXNativeTarget "CafeDokoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7C3A31719F4CD1A1A1A3BED /* Debug */,
+				295505837BF64B4140F9642D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D6E48E4AA188B67FF3327122 /* Build configuration list for PBXNativeTarget "CafeDokoCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D705D2AA8611DD0AC3F84C66 /* Debug */,
+				645BDAAC1309DD3EF328E684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F5E7EFBCACDC192069CD4447 /* Build configuration list for PBXProject "CafeDoko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DAA6246DB1F929F99F6698 /* Debug */,
+				3BEB74EBD34FA5ADBFE24C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FDD75B6333CF9F299E391E4 /* Project object */;
+}

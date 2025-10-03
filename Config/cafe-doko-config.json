@@ -1,0 +1,16 @@
+{
+  "dataProvider": "google_places",
+  "google_places": {
+    "api_key": "${GOOGLE_PLACES_API_KEY}",
+    "default_radius": 1000,
+    "max_results": 20
+  },
+  "remote": {
+    "url": "https://dlwjajmdqopypgzkiwut.supabase.co/rest/v1/cafes?select=*",
+    "headers": {
+      "X-API-Key": "${CAFE_DOKO_API_KEY}",
+      "apikey": "${CAFE_DOKO_API_KEY}",
+      "Accept": "application/json"
+    }
+  }
+}

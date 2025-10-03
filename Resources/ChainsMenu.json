@@ -1,0 +1,503 @@
+{
+  "chains": [
+    {
+      "id": "starbucks",
+      "name": "スターバックス",
+      "categories": [
+        {
+          "name": "ドリンク",
+          "products": [
+            {
+              "name": "ドリップコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "Short",
+                  "price": 390
+                },
+                {
+                  "size": "Tall",
+                  "price": 430
+                },
+                {
+                  "size": "Grande",
+                  "price": 470
+                },
+                {
+                  "size": "Venti",
+                  "price": 510
+                }
+              ]
+            },
+            {
+              "name": "カフェラテ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "Short",
+                  "price": 460
+                },
+                {
+                  "size": "Tall",
+                  "price": 505
+                },
+                {
+                  "size": "Grande",
+                  "price": 550
+                },
+                {
+                  "size": "Venti",
+                  "price": 595
+                }
+              ]
+            },
+            {
+              "name": "キャラメルマキアート",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "Short",
+                  "price": 490
+                },
+                {
+                  "size": "Tall",
+                  "price": 535
+                },
+                {
+                  "size": "Grande",
+                  "price": 580
+                },
+                {
+                  "size": "Venti",
+                  "price": 625
+                }
+              ]
+            },
+            {
+              "name": "ホワイトモカ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "Short",
+                  "price": 490
+                },
+                {
+                  "size": "Tall",
+                  "price": 535
+                },
+                {
+                  "size": "Grande",
+                  "price": 580
+                },
+                {
+                  "size": "Venti",
+                  "price": 625
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "フード",
+          "products": [
+            {
+              "name": "アメリカンワッフル",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 320
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doutor",
+      "name": "ドトール",
+      "categories": [
+        {
+          "name": "ドリンク",
+          "products": [
+            {
+              "name": "ブレンドコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 250
+                },
+                {
+                  "size": "M",
+                  "price": 270
+                }
+              ]
+            },
+            {
+              "name": "アイスコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 250
+                },
+                {
+                  "size": "M",
+                  "price": 270
+                }
+              ]
+            },
+            {
+              "name": "カフェラテ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 300
+                },
+                {
+                  "size": "M",
+                  "price": 340
+                }
+              ]
+            },
+            {
+              "name": "ロイヤルミルクティー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 300
+                },
+                {
+                  "size": "M",
+                  "price": 340
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "フード",
+          "products": [
+            {
+              "name": "ミラノサンドA",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 420
+                }
+              ]
+            },
+            {
+              "name": "ミラノサンドB",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 450
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tullys",
+      "name": "タリーズ",
+      "categories": [
+        {
+          "name": "ドリンク",
+          "products": [
+            {
+              "name": "本日のコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "Short",
+                  "price": 350
+                },
+                {
+                  "size": "Tall",
+                  "price": 400
+                },
+                {
+                  "size": "Grande",
+                  "price": 450
+                }
+              ]
+            },
+            {
+              "name": "カフェラテ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "Short",
+                  "price": 410
+                },
+                {
+                  "size": "Tall",
+                  "price": 460
+                },
+                {
+                  "size": "Grande",
+                  "price": 510
+                }
+              ]
+            },
+            {
+              "name": "ロイヤルミルクティー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "Short",
+                  "price": 410
+                },
+                {
+                  "size": "Tall",
+                  "price": 460
+                },
+                {
+                  "size": "Grande",
+                  "price": 510
+                }
+              ]
+            },
+            {
+              "name": "ハニーミルクラテ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "Short",
+                  "price": 460
+                },
+                {
+                  "size": "Tall",
+                  "price": 510
+                },
+                {
+                  "size": "Grande",
+                  "price": 560
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "フード",
+          "products": [
+            {
+              "name": "ホットドッグ",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 380
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "komeda",
+      "name": "コメダ珈琲",
+      "categories": [
+        {
+          "name": "ドリンク",
+          "products": [
+            {
+              "name": "ブレンドコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 480
+                }
+              ]
+            },
+            {
+              "name": "アイスコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 480
+                }
+              ]
+            },
+            {
+              "name": "カフェオーレ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 520
+                }
+              ]
+            },
+            {
+              "name": "ウインナーコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 570
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "フード",
+          "products": [
+            {
+              "name": "シロノワール",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 800
+                }
+              ]
+            },
+            {
+              "name": "小倉トースト",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 550
+                }
+              ]
+            },
+            {
+              "name": "ミックスサンド",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "excelsior",
+      "name": "エクセルシオール",
+      "categories": [
+        {
+          "name": "ドリンク",
+          "products": [
+            {
+              "name": "ブレンドコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 290
+                },
+                {
+                  "size": "M",
+                  "price": 340
+                },
+                {
+                  "size": "L",
+                  "price": 390
+                }
+              ]
+            },
+            {
+              "name": "アイスコーヒー",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 290
+                },
+                {
+                  "size": "M",
+                  "price": 340
+                },
+                {
+                  "size": "L",
+                  "price": 390
+                }
+              ]
+            },
+            {
+              "name": "カフェラテ",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 360
+                },
+                {
+                  "size": "M",
+                  "price": 410
+                },
+                {
+                  "size": "L",
+                  "price": 460
+                }
+              ]
+            },
+            {
+              "name": "キャラメルマキアート",
+              "category": "ドリンク",
+              "sizes": [
+                {
+                  "size": "S",
+                  "price": 410
+                },
+                {
+                  "size": "M",
+                  "price": 460
+                },
+                {
+                  "size": "L",
+                  "price": 510
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "フード",
+          "products": [
+            {
+              "name": "ホットサンド",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 380
+                }
+              ]
+            },
+            {
+              "name": "クロワッサン",
+              "category": "フード",
+              "sizes": [
+                {
+                  "size": "M",
+                  "price": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "last_updated": "2025-10-03 09:02:12"
+}

@@ -1,0 +1,118 @@
+name: CafeDoko
+options:
+  deploymentTarget:
+    iOS: 18.0
+  bundleIdPrefix: com.cafedoko
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: 5.10
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS: YES
+
+targets:
+  CafeDokoApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+        excludes:
+          - Supporting
+    resources:
+      - Resources/Assets.xcassets
+      - Resources/CafeFacts.json
+      - Resources/ChainsMenu.json
+      - Config/cafe-doko-config.json
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.cafedoko.app
+        INFOPLIST_FILE: App/Supporting/Info.plist
+    dependencies:
+      - target: CafeDokoCore
+      - target: DokoCafeFeature
+
+  CafeDokoAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests/AppTests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: CafeDokoApp
+
+  CafeDokoCore:
+    type: framework
+    platform: iOS
+    sources:
+      - Features/Core/Sources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.cafedoko.core
+        GENERATE_INFOPLIST_FILE: YES
+        CLANG_ENABLE_MODULE_VERIFIER: YES
+
+  CafeDokoCoreTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Features/Core/Tests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: CafeDokoCore
+
+  DokoCafeFeature:
+    type: framework
+    platform: iOS
+    sources:
+      - Features/DokoCafe/Sources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.cafedoko.dokocafe
+        GENERATE_INFOPLIST_FILE: YES
+        CLANG_ENABLE_MODULE_VERIFIER: YES
+    dependencies:
+      - target: CafeDokoCore
+
+  DokoCafeFeatureTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Features/DokoCafe/Tests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: DokoCafeFeature
+
+schemes:
+  CafeDokoApp:
+    shared: true
+    build:
+      targets:
+        CafeDokoApp: all
+    test:
+      gatherCoverageData: false
+      targets:
+        - name: CafeDokoAppTests
+        - name: CafeDokoCoreTests
+        - name: DokoCafeFeatureTests
+  CafeDokoCore:
+    shared: true
+    build:
+      targets:
+        CafeDokoCore: all
+    test:
+      targets:
+        - name: CafeDokoCoreTests
+  DokoCafeFeature:
+    shared: true
+    build:
+      targets:
+        DokoCafeFeature: all
+    test:
+      targets:
+        - name: DokoCafeFeatureTests

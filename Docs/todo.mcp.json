@@ -1,0 +1,324 @@
+{
+  "owners" : [
+    "asanaoyoshiaki",
+    "cursor"
+  ],
+  "project" : "カフェどこ？",
+  "tasks" : [
+    {
+      "description" : "XcodeGen をインストールし、`xcodegen generate` で カフェどこ？ のプロジェクトを生成する。",
+      "due_date" : "2025-02-18",
+      "id" : "APP-001",
+      "links" : [
+        "project.yml"
+      ],
+      "notes" : [
+        "生成後は CafeDoko.xcodeproj\/ をリポジトリに追加"
+      ],
+      "owner" : "asanaoyoshiaki",
+      "status" : "done",
+      "title" : "XcodeGen で Xcode プロジェクトを生成"
+    },
+    {
+      "description" : "Docs\/todo.mcp.json を MCP ホストと同期する CLI コマンドを作成する。",
+      "id" : "APP-002",
+      "links" : [
+        "Docs\/cursor-rules.md"
+      ],
+      "notes" : [
+        "Swift の async\/await と URLSession を想定",
+        "CafeDokoCore にユニットテストを追加"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "automation"
+      ],
+      "title" : "MCP ブリッジスクリプトの実装"
+    },
+    {
+      "description" : "SwiftUI iOS26 記事を参考に、リキッドガラス風のボトムナビゲーションを再現する。",
+      "id" : "UX-010",
+      "links" : [
+        "https:\/\/qiita.com\/nakasaka_ui\/items\/64d21d097662faad69a6"
+      ],
+      "notes" : [
+        "Features\/LiquidGlass モジュールとして実装"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "ui",
+        "swiftui"
+      ],
+      "title" : "リキッドガラス風タブバーの試作"
+    },
+    {
+      "blocked_by" : [
+        "APP-001"
+      ],
+      "description" : "モジュラーターゲット構成と MCP 自動化を採用する理由を ADR にまとめる。",
+      "id" : "DOC-001",
+      "links" : [
+        "Docs\/adr"
+      ],
+      "notes" : [
+        "Docs\/adr\/ADR-001-modular-architecture.md を作成"
+      ],
+      "owner" : "asanaoyoshiaki",
+      "status" : "done",
+      "tags" : [
+        "documentation"
+      ],
+      "title" : "モジュラーアーキテクチャの ADR 作成"
+    },
+    {
+      "description" : "Features\/DokoCafe に ViewModel とテストの初期実装を作成する。",
+      "id" : "DC-001",
+      "links" : [
+        "Features\/DokoCafe\/Sources\/DokoCafeFeature.swift",
+        "Features\/DokoCafe\/Tests\/DokoCafeFeatureTests.swift"
+      ],
+      "notes" : [
+        "CafeDokoApp から依存を追加",
+        "XcodeGen 設定にターゲットを追加"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "dokocafe",
+        "architecture"
+      ],
+      "title" : "どこカフェ？機能のモジュール骨格を追加"
+    },
+    {
+      "description" : "コーヒー価格比較の一覧 UI を SwiftUI で構築し、App シェルに組み込む。",
+      "id" : "DC-002",
+      "links" : [
+        "App\/ContentView.swift"
+      ],
+      "notes" : [
+        "CafeDokoCore の状態管理と連携",
+        "価格ソート結果を表示",
+        "CafeDataProviding 経由でモック\/実データ切替"
+      ],
+      "owner" : "asanaoyoshiaki",
+      "status" : "done",
+      "tags" : [
+        "dokocafe",
+        "swiftui"
+      ],
+      "title" : "どこカフェ？ UI のプロトタイピング"
+    },
+    {
+      "description" : "Config のヘッダー解決と DTO マッピングを整備し、実 API からチェーン一覧を取得できるようにする。",
+      "id" : "DC-003",
+      "links" : [
+        "Features\/DokoCafe\/Sources\/CafeProviders.swift",
+        "Features\/DokoCafe\/Sources\/CafeConfigurator.swift",
+        "Config\/cafe-doko-config.json"
+      ],
+      "notes" : [
+        "X-API-Key は ${CAFE_DOKO_API_KEY} を環境変数から解決",
+        "400\/500 系レスポンスの message フィールドを UI のエラーバナーへ表示"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "dokocafe",
+        "api"
+      ],
+      "title" : "RemoteCafeDataProvider を本番 API に接続"
+    },
+    {
+      "description" : "VoiceOver\/Dynamic Type 対応を強化し、再試行・閉じる操作の支援を追加する。",
+      "id" : "UX-011",
+      "links" : [
+        "App\/ContentView.swift"
+      ],
+      "notes" : [
+        "エラーバナーに再試行ボタンとアニメーションを追加",
+        "Large Dynamic Type 時の ProgressView スケールを調整"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "ux",
+        "accessibility"
+      ],
+      "title" : "エラーバナーとローディング UI のアクセシビリティ改善"
+    },
+    {
+      "description" : "RemoteCafeDataProvider のログを収集し、将来のモニタリング基盤に接続する。",
+      "id" : "OPS-005",
+      "links" : [
+        "Features\/DokoCafe\/Sources\/CafeProviders.swift"
+      ],
+      "notes" : [
+        "Logger(subsystem:com.cafedoko.app) のカテゴリ RemoteCafeDataProvider を利用",
+        "メトリクス化のための JSON 出力\/TelemetryKit 連携を検討"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "observability"
+      ],
+      "title" : "os_log 出力を可視化ダッシュボードへ連携"
+    },
+    {
+      "description" : "MapKit を用いてカフェ位置を地図表示し、リストと切り替え可能な地図ビューを実装する。",
+      "id" : "DC-004",
+      "links" : [
+        "App\/ContentView.swift",
+        "App\/CafeDetailView.swift"
+      ],
+      "notes" : [
+        "MapKit を使った地図表示とピンタップで詳細に遷移",
+        "リスト\/マップ切り替え UI とルート案内ボタンを追加"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "dokocafe",
+        "map"
+      ],
+      "title" : "地図ビュー統合"
+    },
+    {
+      "description" : "お気に入り登録\/解除と保存済みリスト表示を実装し、ユーザーが気になるカフェを保存できるようにする。",
+      "id" : "UX-012",
+      "links" : [
+        "App\/ContentView.swift"
+      ],
+      "notes" : [
+        "カードにお気に入りボタンを追加",
+        "@AppStorage またはローカルDBで永続化し、お気に入りフィルタを提供"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "ux",
+        "swiftui"
+      ],
+      "title" : "お気に入り機能の実装"
+    },
+    {
+      "description" : "API から営業時間・住所を取得し、営業状況 (営業中\/閉店) を UI に表示できるようにする。",
+      "id" : "DC-005",
+      "links" : [
+        "Features\/DokoCafe\/Sources\/CafeProviders.swift",
+        "App\/CafeDetailView.swift"
+      ],
+      "notes" : [
+        "Supabase テーブルに営業時間列を追加しレスポンスへ組み込む",
+        "カードおよび詳細画面に営業中バッジと住所表示を追加"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "dokocafe",
+        "api"
+      ],
+      "title" : "営業時間・住所情報の表示"
+    },
+    {
+      "description" : "トップ画面の背景・テキストコントラストを見直し、ライト\/ダークモード双方で読みやすさを確保する。",
+      "id" : "UX-013",
+      "links" : [
+        "App\/ContentView.swift",
+        "App\/Theme\/ColorTokens.swift"
+      ],
+      "notes" : [
+        "プレースホルダーやサブタイトルの不透明度を調整",
+        "液体ガラス調のカード境界に軽いアウトラインを追加"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "ux",
+        "ui"
+      ],
+      "title" : "トップ画面のカラーコントラスト調整"
+    },
+    {
+      "description" : "検索結果ゼロ時のエンプティカードを再設計し、ガイド文と視認性を強化する。",
+      "id" : "UX-014",
+      "links" : [
+        "App\/ContentView.swift"
+      ],
+      "notes" : [
+        "ガラス効果 + 枠線 + アイコンを検討",
+        "推奨アクションのテキストを追加"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "ux"
+      ],
+      "title" : "エンプティステートのUI改善"
+    },
+    {
+      "description" : "リスト\/マップ切り替えおよびメニューアイコン周辺のレイアウトを調整し、誤タップを防ぐ。",
+      "id" : "UX-015",
+      "links" : [
+        "App\/ContentView.swift"
+      ],
+      "notes" : [
+        "左右の余白・サイズ調整",
+        "タップ領域を分離しアクセシビリティラベルを見直す"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "ux"
+      ],
+      "title" : "トップバー操作アイコンの配置調整"
+    },
+    {
+      "description" : "Supabase の営業時間カラムを整備し、API レスポンスをパースして実際の営業状況を算出できるようにする。",
+      "id" : "DC-006",
+      "links" : [
+        "Features\/DokoCafe\/Sources\/CafeProviders.swift",
+        "App\/CafeDetailView.swift"
+      ],
+      "notes" : [
+        "Supabase テーブルに opening_hours_regular カラムを追加し、曜日ごとの時間帯を保存",
+        "レスポンスの時間フォーマットをパースして現在時刻と比較し、営業中\/閉店中を判定"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "dokocafe",
+        "api"
+      ],
+      "title" : "営業時間ロジックの本実装"
+    },
+    {
+      "description" : "README と observability ガイドに最新機能と運用手順を反映する。",
+      "id" : "DOC-002",
+      "links" : [
+        "README.md",
+        "Docs\/observability-guide.md"
+      ],
+      "notes" : [
+        "お気に入り機能や地図ビューの使い方を README に追記",
+        "ログエクスポートツールの使用例を observability-guide.md に統合"
+      ],
+      "owner" : "cursor",
+      "status" : "done",
+      "tags" : [
+        "documentation"
+      ],
+      "title" : "README\/Docs の最新化"
+    }
+  ],
+  "updated_at" : "2025-10-02T22:44:03Z",
+  "version" : "0.1.0",
+  "workflow" : [
+    "backlog",
+    "in_progress",
+    "review",
+    "blocked",
+    "done"
+  ]
+}

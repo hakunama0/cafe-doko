@@ -1,0 +1,52 @@
+name: Update Cafe Menus
+
+on:
+  schedule:
+    # 毎週月曜日 0:00 JST (日曜日 15:00 UTC)
+    - cron: '0 15 * * 0'
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: |
+          pip install -r Scripts/requirements.txt
+          
+      - name: Run scraper
+        env:
+          SUPABASE_URL: https://dlwjajmdqopypgzkiwut.supabase.co
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          CAFE_DOKO_API_KEY: ${{ secrets.CAFE_DOKO_API_KEY }}
+        run: |
+          python3 Scripts/scrape_all_chains.py
+          python3 Scripts/import_chains_to_supabase.py
+          
+      - name: Commit updated JSON
+        run: |
+          git config user.name "Menu Bot"
+          git config user.email "bot@cafedoko.app"
+          git add Resources/ChainsMenu.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🤖 自動更新: メニューと価格情報 ($(date +'%Y-%m-%d'))"
+            git push
+          fi
+          
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "⚠️ スクレイピングに失敗しました"
+          # ここにSlack通知などを追加可能
+
